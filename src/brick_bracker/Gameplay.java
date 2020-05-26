@@ -48,9 +48,11 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{ //K
         setFocusTraversalKeysEnabled(false);
         timer = new Timer(delay , this);
         timer.start(); 
+    
         
     }
     
+       
     public void paint(Graphics g){
         //Fundo da tela
         g.setColor(Color.black);
@@ -215,7 +217,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{ //K
                 playerX = 310;
                 score = 0;
                 totalBricks = 21;
-                map = new MapGenerator(3,7);
+                map = new MapGenerator(4,7);
                 
                 repaint();
             }
@@ -235,6 +237,5 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{ //K
         play = true;
         playerX += -20;
     }
-    
-    
+
 }
