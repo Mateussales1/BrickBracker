@@ -25,7 +25,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{ //K
     private int totalBricks = 28;
     
     //Tempo de movimentação
-    private int delay = 1;
+    private int delay = 8;
     private Timer timer;
     
     
@@ -64,7 +64,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{ //K
         //Bordas
         g.setColor(Color.yellow);
         g.fillRect(0,0, 3, 592);
-        //Borda da 
+        //Borda da esquerda
         g.fillRect(0, 0, 690, 3);
         //Borda da direita
         g.fillRect(681, 0, 3, 592);
