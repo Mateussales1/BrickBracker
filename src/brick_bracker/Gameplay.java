@@ -22,7 +22,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{ //K
     private int score = 0;
     
     //Total de tijolos
-    private int totalBricks = 28;
+    private int totalBricks = 21;
     
     //Tempo de movimentação
     private int delay = 8;
@@ -41,7 +41,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{ //K
     //Construtor
     public Gameplay(){
         //Definindo a ordem de linha e colunas de tijolos
-        map = new MapGenerator(4, 7);
+        map = new MapGenerator(3, 7);
         
         addKeyListener(this);
         setFocusable(true);
@@ -217,7 +217,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{ //K
                 playerX = 310;
                 score = 0;
                 totalBricks = 21;
-                map = new MapGenerator(4,7);
+                map = new MapGenerator(3,7);
                 
                 repaint();
             }
